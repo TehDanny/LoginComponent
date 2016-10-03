@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LoginTestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class IntegrationTests
     {
         [TestMethod]
         public void TestMethod1()

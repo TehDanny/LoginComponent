@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataMapper.cs" />
+    <Compile Include="IVerify.cs" />
+    <Compile Include="Verify.cs" />
+    <Compile Include="IDataMapper.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
