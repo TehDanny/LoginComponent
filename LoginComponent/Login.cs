@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    public class Login
+    public class Login : ILogin
     {
+        public void ChangeEmail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ChangePassword()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateUser()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteUser()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

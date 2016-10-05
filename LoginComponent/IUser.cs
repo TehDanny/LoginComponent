@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    interface IVerify
+    interface IUser
     {
-        void CheckEmail();
-        void CheckPassword();
-        void ConfirmPassword();
+        string Email { get; set; }
+        string HashedPassword { get; set; }
     }
 }

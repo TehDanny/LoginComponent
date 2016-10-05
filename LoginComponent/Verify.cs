@@ -8,7 +8,21 @@ using System.Threading.Tasks;
 [assembly: InternalsVisibleTo("NameOfTestAssembly")]
 namespace LoginComponent
 {
-    class Verify // Helper class
+    class Verify : IVerify // Helper class
     {
+        public void CheckEmail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CheckPassword()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ConfirmPassword()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -56,6 +56,12 @@
     <Compile Include="UnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoginComponent\LoginComponent.csproj">
+      <Project>{f97685d4-35e1-41c4-8ae1-e05bd3928376}</Project>
+      <Name>LoginComponent</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    class DataMapper : IDataMapper
+    class DataMapper : IDataMapper<User>
     {
+        public void Create(User obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(User obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User Read(int key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(User obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

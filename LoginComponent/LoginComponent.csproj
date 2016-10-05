@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataMapper.cs" />
+    <Compile Include="ILogin.cs" />
+    <Compile Include="IUser.cs" />
     <Compile Include="IVerify.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Verify.cs" />
     <Compile Include="IDataMapper.cs" />
     <Compile Include="Login.cs" />

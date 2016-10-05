@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    interface IVerify
+    interface ILogin
     {
-        void CheckEmail();
-        void CheckPassword();
-        void ConfirmPassword();
+        void CreateUser();
+        void DeleteUser();
+        void ChangeEmail();
+        void ChangePassword();
     }
 }
