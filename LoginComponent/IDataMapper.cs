@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    interface IDataMapper<T>
+    public interface IDataMapper<T>
     {
         void Create(T obj);
         T Read(int key);

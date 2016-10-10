@@ -8,6 +8,13 @@ namespace LoginComponent
 {
     public class Login : ILogin
     {
+        private ILoginDataMapper ldm;
+
+        public Login(ILoginDataMapper ldm)
+        {
+            this.ldm = ldm;
+        }
+
         public void ChangeEmail(string email)
         {
             throw new NotImplementedException();

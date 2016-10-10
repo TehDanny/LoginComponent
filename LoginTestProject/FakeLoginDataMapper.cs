@@ -3,26 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LoginComponent;
 
-namespace LoginComponent
+namespace LoginTestProject
 {
-    public class LoginDataMapper : ILoginDataMapper
+    class FakeLoginDataMapper : LoginComponent.ILoginDataMapper
     {
-        private string connectionString;
-
-        public LoginDataMapper(string connectionString)
-        {
-            this.connectionString = connectionString;
-        }
-
         public void Create(User obj)
         {
-            throw new NotImplementedException();
         }
 
         public void Delete(User obj)
         {
-            throw new NotImplementedException();
         }
 
         public User Read(int key)
@@ -32,7 +24,6 @@ namespace LoginComponent
 
         public void Update(User obj)
         {
-            throw new NotImplementedException();
         }
     }
 }

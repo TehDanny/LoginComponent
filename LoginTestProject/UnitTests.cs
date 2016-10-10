@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using LoginComponent;
 
 namespace LoginTestProject
 {
@@ -33,7 +34,10 @@ namespace LoginTestProject
         [TestMethod]
         public void U_Login_CreateUser_AllInputOK_Void()
         {
-            Assert.Fail();
+            ILoginDataMapper fdm = new FakeLoginDataMapper();
+            Login l = new Login(fdm);
+            l.CreateUser("test@eal.dk", "Testing1", "Testing1");
+            Assert.IsTrue(true);
         }
 
         [TestMethod]
