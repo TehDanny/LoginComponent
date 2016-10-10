@@ -9,6 +9,11 @@ namespace LoginComponent
     public class User : IUser
     {
         public string Email { get; set; }
-        public string HashedPassword { get; set; }
+        public int HashedPassword { get; set; }
+        public User(string email, int hashedPassword)
+        {
+            Email = email;
+            HashedPassword = hashedPassword;
+        }
     }
 }

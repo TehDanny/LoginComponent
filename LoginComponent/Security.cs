@@ -8,9 +8,9 @@ namespace LoginComponent
 {
     static class Security // Helper class
     {
-        public static void HashPassword()
+        public static int HashPassword(string password)
         {
-            throw new NotImplementedException();
+            return password.GetHashCode();
         }
     }
 }

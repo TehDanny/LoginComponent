@@ -27,6 +27,7 @@ namespace LoginComponent
             if (password.Length<8)
                 throw new Exception("Password is too short.");
 
+            /*
             int capitalLetters = 0;
             int numbers = 0;
             foreach (char character in password)
@@ -40,6 +41,7 @@ namespace LoginComponent
                 throw new Exception("Password doesn't have at least one capital letter.");
             if (numbers == 0)
                 throw new Exception("Password doesn't have at least one number.");
+                */
 
             if(password.ToLower() == password || password.ToUpper() == password)
                 throw new Exception("Password doesn't have at least one upper case and at least one lower case letter.");

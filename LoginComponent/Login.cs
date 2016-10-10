@@ -30,7 +30,8 @@ namespace LoginComponent
             Verify.CheckEmail(email);
             Verify.CheckPassword(password);
             Verify.ConfirmPassword(password, confirmPassword);
-
+            int hashedPassword = Security.HashPassword(password);
+            User u = new User(email, hashedPassword);
         }
 
         public void DeleteUser(string email)

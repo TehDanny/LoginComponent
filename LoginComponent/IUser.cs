@@ -9,6 +9,6 @@ namespace LoginComponent
     interface IUser
     {
         string Email { get; set; }
-        string HashedPassword { get; set; }
+        int HashedPassword { get; set; }
     }
 }
