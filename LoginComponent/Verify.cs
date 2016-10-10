@@ -12,7 +12,11 @@ namespace LoginComponent
     {
         public static void CheckEmail(string email)
         {
-            throw new NotImplementedException();
+            if (email.Count(x => x == '@') != 1)
+                throw new Exception("Email needs one @");
+
+            if (email.Count(x => x == '.') != 1)
+                throw new Exception("Email needs one dot");
         }
 
         public static void CheckPassword(string password)
@@ -35,6 +39,12 @@ namespace LoginComponent
             if (capitalLetters == 0)
                 throw new Exception("Password doesn't have at least one capital letter.");
             if (numbers == 0)
+                throw new Exception("Password doesn't have at least one number.");
+
+            if(password.ToLower() == password || password.ToUpper() == password)
+                throw new Exception("Password doesn't have at least one upper case and at least one lower case letter.");
+
+            if (password.Any(char.IsDigit) == false)
                 throw new Exception("Password doesn't have at least one number.");
         }
 
