@@ -43,8 +43,8 @@
     <Compile Include="ILogin.cs" />
     <Compile Include="ILoginDataMapper.cs" />
     <Compile Include="IUser.cs" />
-    <Compile Include="IVerify.cs" />
     <Compile Include="LoginDataMapper.cs" />
+    <Compile Include="Security.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Verify.cs" />
     <Compile Include="IDataMapper.cs" />

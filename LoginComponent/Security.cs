@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    interface IVerify
+    static class Security // Helper class
     {
-        void CheckEmail();
-        void CheckPassword();
-        void ConfirmPassword();
+        public static void HashPassword()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 [assembly: InternalsVisibleTo("NameOfTestAssembly")]
 namespace LoginComponent
 {
-    class Verify : IVerify // Helper class
+    class Verify // Helper class
     {
-        public void CheckEmail()
+        public static void CheckEmail()
         {
             throw new NotImplementedException();
         }
 
-        public void CheckPassword()
+        public static void CheckPassword()
         {
             throw new NotImplementedException();
         }
 
-        public void ConfirmPassword()
+        public static void ConfirmPassword()
         {
             throw new NotImplementedException();
         }
