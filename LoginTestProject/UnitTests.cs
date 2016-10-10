@@ -13,58 +13,81 @@ namespace LoginTestProject
         }
 
         [TestMethod]
-        public void U_Login_LoginUser_AllDataOK_Void()
+        public void U_Login_LoginUser_AllInputOK_Void()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_LoginUser_InvalidEmail_Exception()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_LoginUser_InvalidPassword_Exception()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
-        public void U_Login_CreateUser_AllDataOK_Void()
+        public void U_Login_CreateUser_AllInputOK_Void()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_CreateUser_PasswordsArentMatching_Exception()
         {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void U_Login_CreateUser_InvalidPassword_Exception()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void U_Login_CreateUser_InvalidEmail_Exception()
+        {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_CreateUser_EmailAlreadyInUse_Exception()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
-        public void U_Login_DeleteUser_AllDataOK_Void()
+        public void U_Login_DeleteUser_AllInputOK_Void()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_DeleteUser_UserDoesntExist_Exception()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
-        public void U_Login_ChangeEmail_AllDataOK_Void()
+        public void U_Login_ChangeEmail_AllInputOK_Void()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
-        public void U_Login_ChangePassword_AllDataOK_Void()
+        public void U_Login_ChangePassword_AllInputOK_Void()
         {
+            Assert.Fail();
         }
 
         [TestMethod]
         public void U_Login_ChangePassword_PasswordsArentMatching_Exception()
         {
+            Assert.Fail();
         }
 
         [TestCleanup]
