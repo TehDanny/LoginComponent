@@ -27,7 +27,10 @@ namespace LoginComponent
 
         public void CreateUser(string email, string password, string confirmPassword)
         {
-            throw new NotImplementedException();
+            Verify.CheckEmail(email);
+            Verify.CheckPassword(password);
+            Verify.ConfirmPassword(password, confirmPassword);
+
         }
 
         public void DeleteUser(string email)
