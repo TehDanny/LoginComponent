@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LoginComponent
 {
-    class DataMapper : IDataMapper<User>
+    class LoginDataMapper : ILoginDataMapper
     {
         public void Create(User obj)
         {
