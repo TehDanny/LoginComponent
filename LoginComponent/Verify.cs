@@ -32,9 +32,9 @@ namespace LoginComponent
                 if (char.IsNumber(character))
                     numbers++;
             }
-            if (capitalLetters > 0)
+            if (capitalLetters == 0)
                 throw new Exception("Password doesn't have at least one capital letter.");
-            if (numbers > 0)
+            if (numbers == 0)
                 throw new Exception("Password doesn't have at least one number.");
         }
 
