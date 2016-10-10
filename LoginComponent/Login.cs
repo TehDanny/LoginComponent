@@ -8,27 +8,27 @@ namespace LoginComponent
 {
     public class Login : ILogin
     {
-        public void ChangeEmail()
+        public void ChangeEmail(string email)
         {
             throw new NotImplementedException();
         }
 
-        public void ChangePassword()
+        public void ChangePassword(string email)
         {
             throw new NotImplementedException();
         }
 
-        public void CreateUser()
+        public void CreateUser(string email, string password, string confirmPassword)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteUser()
+        public void DeleteUser(string email)
         {
             throw new NotImplementedException();
         }
 
-        public void LoginUser()
+        public void LoginUser(string email, string password)
         {
             throw new NotImplementedException();
         }

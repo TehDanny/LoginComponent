@@ -8,10 +8,10 @@ namespace LoginComponent
 {
     interface ILogin
     {
-        void LoginUser();
-        void CreateUser();
-        void DeleteUser();
-        void ChangeEmail();
-        void ChangePassword();
+        void LoginUser(string email, string password);
+        void CreateUser(string email, string password, string confirmPassword);
+        void DeleteUser(string email);
+        void ChangeEmail(string email);
+        void ChangePassword(string email);
     }
 }
