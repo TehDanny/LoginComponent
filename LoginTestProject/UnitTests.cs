@@ -41,6 +41,7 @@ namespace LoginTestProject
         }
 
         [TestMethod]
+        [ExpectedException(typeof(Exception))]
         public void U_Login_CreateUser_PasswordsArentMatching_Exception()
         {
             Assert.Fail();
