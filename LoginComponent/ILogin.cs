@@ -8,6 +8,7 @@ namespace LoginComponent
 {
     interface ILogin
     {
+        void LoginUser();
         void CreateUser();
         void DeleteUser();
         void ChangeEmail();

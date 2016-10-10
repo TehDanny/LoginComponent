@@ -27,5 +27,10 @@ namespace LoginComponent
         {
             throw new NotImplementedException();
         }
+
+        public void LoginUser()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
