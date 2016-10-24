@@ -34,21 +34,26 @@ namespace LoginTestProject
         [TestMethod]
         public void U_Login_CreateUser_AllInputOK_Void()
         {
+            // Arrange
             ILoginDataMapper fdm = new FakeLoginDataMapper();
             Login l = new Login(fdm);
+
+            // Act
             l.CreateUser("test@eal.dk", "Testing1", "Testing1");
+
+            // Assert
             Assert.IsTrue(true);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void U_Login_CreateUser_PasswordsArentMatching_Exception()
+        [ExpectedException(typeof(NotEqualPasswordsException))]
+        public void U_Login_CreateUser_NotEqualPasswords_NotEqualPasswordsException()
         {
             Assert.Fail();
         }
 
         [TestMethod]
-        public void U_Login_CreateUser_InvalidPassword_Exception()
+        public void U_Login_CreateUser_InvalidPassword_InvalidPasswordException()
         {
             Assert.Fail();
         }
